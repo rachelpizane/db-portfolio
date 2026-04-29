@@ -1,0 +1,73 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght,XOPQ,XTRA,YOPQ,YTDE,YTFI,YTLC,YTUC@8..144,100..1000,96,468,79,-203,738,514,712&display=swap");
+@import "tailwindcss";
+
+@font-face {
+    font-family: "TTSupermolot Regular";
+    src: url("./assets/fonts/TT-Supermolot-Regular.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "TTSupermolot Bold";
+    src: url("./assets/fonts/TT-Supermolot-Bold.otf") format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@theme inline {
+    --font-heading: var(--font-tt-supermolot-bold);
+    --font-sans: var(--font-roboto-flex);
+    --font-sub-heading: var(--font-tt-supermolot-regular);
+    --color-primary: var(--primary);
+    --color-foreground: var(--foreground);
+    --color-accent: var(--accent);
+    --color-highlight: var(--highlight);
+    --color-chart-1: var(--chart-1);
+}
+
+:root {
+    --font-roboto-flex: "Roboto Flex", sans-serif;
+    --font-tt-supermolot-bold: "TTSupermolot Bold", sans-serif;
+    --font-tt-supermolot-regular: "TTSupermolot Regular", sans-serif;
+    --primary: #85d4f4;
+    --foreground: #292929;
+    --accent: #414aba;
+    --highlight: #ed177d;
+    --chart-1: #eab53d;
+}
+
+@layer base {
+    html {
+        @apply font-sans;
+    }
+    body {
+        @apply text-foreground;
+    }
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        @apply font-heading;
+    }
+    h1 {
+        font-size: 2.25rem;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3 {
+        font-size: 1.75rem;
+    }
+    h4 {
+        font-size: 1.5rem;
+    }
+    h5 {
+        font-size: 1.125rem;
+    }
+    h6 {
+        font-size: 0.875rem;
+    }
+}
