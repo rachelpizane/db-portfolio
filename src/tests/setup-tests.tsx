@@ -1,4 +1,3 @@
-// eslint-disable-next-line react-refresh/only-export-components
 import "@testing-library/jest-dom";
 import { render } from "@testing-library/react";
 import { RouterProvider } from "./providers/router-provider";
@@ -19,5 +18,5 @@ export function renderWithProvider(ui: React.ReactElement, { route = "/" } = {})
     return render(<RouterProvider route={route}>{ui}</RouterProvider>);
 }
 
-export * from "@testing-library/react";
+export { screen, fireEvent, waitFor } from "@testing-library/react";
 export { renderWithProvider as render };

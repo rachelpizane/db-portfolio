@@ -1,15 +1,14 @@
 import { ProjectGallery, ProjectTitle } from "../../components";
 import { projects } from "../../datas/projects";
+import { sortProjectsByDate } from "../../utils/sort-projects";
 
 export function Projects() {
-    const projectsSorted = projects
-        .slice()
-        .sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+    const sortedProjects = sortProjectsByDate(projects);
 
     return (
         <section className="w-11/12">
             <ProjectTitle />
-            <ProjectGallery projects={projectsSorted} />
+            <ProjectGallery projects={sortedProjects} />
         </section>
     );
 }
