@@ -27,3 +27,13 @@ export type Profile = {
     about: string;
     skills: SkillGroup[];
 };
+
+export type Project = {
+    name: string;
+    description: string;
+    linkGithub: string;
+    linkDeploy: string | null;
+    src: string;
+    createdAt: string;
+    technologies: string[];
+};

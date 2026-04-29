@@ -7,7 +7,7 @@ export function Header() {
     const navLinks = [
         { to: ROUTES.ABOUT, label: "Sobre" },
         { to: "#", label: "Currículo" }, //TODO: ATUALIZAR ROTA
-        { to: "#", label: "Projetos" }, //TODO: ATUALIZAR ROTA
+        { to: ROUTES.PROJECTS, label: "Projetos" },
     ];
 
     return (
