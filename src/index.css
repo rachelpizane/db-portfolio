@@ -18,10 +18,13 @@
 @theme inline {
     --font-heading: var(--font-tt-supermolot-bold);
     --font-sans: var(--font-roboto-flex);
-    --font-sub-heading: var(--font-tt-supermolot-regular);
+    --font-tt-bold: var(--font-tt-supermolot-bold);
+    --font-tt-regular: var(--font-tt-supermolot-regular);
     --color-primary: var(--primary);
+    --color-primary-hover: var(--primary-hover);
     --color-foreground: var(--foreground);
     --color-accent: var(--accent);
+    --color-accent-hover: var(--accent-hover);
     --color-highlight: var(--highlight);
     --color-chart-1: var(--chart-1);
 }
@@ -31,8 +34,10 @@
     --font-tt-supermolot-bold: "TTSupermolot Bold", sans-serif;
     --font-tt-supermolot-regular: "TTSupermolot Regular", sans-serif;
     --primary: #85d4f4;
+    --primary-hover: #bee7f9;
     --foreground: #292929;
     --accent: #414aba;
+    --accent-hover: #221f52;
     --highlight: #ed177d;
     --chart-1: #eab53d;
 }
