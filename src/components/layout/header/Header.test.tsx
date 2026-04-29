@@ -9,6 +9,13 @@ describe(Header.name, () => {
 
             expect(link).toHaveAttribute("href", "/sobre");
         });
+
+        it("should have correct href for Projects link", async () => {
+            render(<Header />);
+            const link = screen.getByRole("link", { name: /projetos/i });
+
+            expect(link).toHaveAttribute("href", "/projetos");
+        });
     });
 
     describe("External navigation", () => {
