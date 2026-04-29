@@ -11,7 +11,11 @@ export function SkillCategory({ skill }: SkillCategoryProps) {
             <h5 className="capitalize">{skill.type}</h5>
             <ul className="mt-4 flex flex-col gap-3">
                 {skill.items.map((item) => (
-                    <SkillProgress key={item.label} item={item} />
+                    <SkillProgress
+                        key={item.label}
+                        item={item}
+                        testid={`skill-${skill.type.toLowerCase()}`}
+                    />
                 ))}
             </ul>
         </div>
