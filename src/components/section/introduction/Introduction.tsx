@@ -7,7 +7,7 @@ interface IntroductionProps {
 export function Introduction({ name, position, src }: IntroductionProps) {
     return (
         <div className="flex flex-col items-center gap-10 md:flex-row md:justify-between">
-            <div className="max-w-[60ch] text-center leading-loose md:text-left">
+            <div className="max-w-[60ch] flex-1 text-center leading-loose md:text-left">
                 <h1>
                     Olá, meu nome é
                     <span className="block font-sans text-7xl font-bold capitalize">{name}</span>

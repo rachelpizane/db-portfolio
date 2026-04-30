@@ -24,7 +24,7 @@ export const projects: Project[] = [
     {
         name: "Reserva de Salas",
         description:
-            "O sistema permite o cadastro de salas e criação de reservas com validações de regras de negócio, como conflito de horários, restrições de período e organização por agenda semanal. Conta com API REST documentada, integração com interface web responsiva e inclui testes automatizados no back-end e frontend.",
+            "O sistema permite o cadastro de salas e criação de reservas com validações de regras de negócio, como conflito de horários, restrições de período e organização por agenda semanal. Conta com API REST documentada, integração com interface web responsiva e inclui testes automatizados no backend e frontend.",
         linkGithub: "https://github.com/rachelpizane/reserva-sala-api",
         linkDeploy: "https://reserva-sala-app.onrender.com/",
         src: "/images/projects/reserva-sala-app.png",
@@ -57,7 +57,7 @@ export const projects: Project[] = [
     {
         name: "Dragons",
         description:
-            "Sistema em React para gerenciamento de dragões com CRUD completo, autenticação simulada, rotas protegidas e consumo de API mockada , utilizando Context API e React Hook Form.",
+            "Sistema em React para gerenciamento de dragões com CRUD completo, autenticação simulada, rotas protegidas e consumo de API mockada, utilizando Context API e React Hook Form.",
         linkGithub: "https://github.com/rachelpizane/dragons-rachelpizane-2026",
         linkDeploy: "https://dragons-rachelpizane-2026.vercel.app/",
         src: "/images/projects/dragons-app.png",
