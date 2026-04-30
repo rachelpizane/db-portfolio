@@ -19,7 +19,7 @@ export const socialLinks: SocialLink[] = [
     {
         name: "LinkedIn",
         icon: "/images/social/icon_linkedin.svg",
-        url: "https://www.linkedin.com/in/rachel-pizane/",
+        url: "https://www.linkedin.com/in/rachel-pizane",
     },
     {
         name: "Email",
