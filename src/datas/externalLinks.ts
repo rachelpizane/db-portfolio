@@ -1,5 +1,7 @@
 import type { CompanyLink, SocialLink } from "../types/common.types";
 
+export const cvLink = "/files/Rachel_Maia_2604_CV.pdf";
+
 export const dbLink = (src?: string): CompanyLink => {
     return {
         url: "https://db.tec.br/",
