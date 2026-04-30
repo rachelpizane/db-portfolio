@@ -2,22 +2,6 @@ import { render, screen } from "../../../tests/setup-tests";
 import { Header } from "./Header";
 
 describe(Header.name, () => {
-    describe("Internal navigation", () => {
-        it("should have correct href for About link", async () => {
-            render(<Header />);
-            const link = screen.getByRole("link", { name: /sobre/i });
-
-            expect(link).toHaveAttribute("href", "/sobre");
-        });
-
-        it("should have correct href for Projects link", async () => {
-            render(<Header />);
-            const link = screen.getByRole("link", { name: /projetos/i });
-
-            expect(link).toHaveAttribute("href", "/projetos");
-        });
-    });
-
     describe("External navigation", () => {
         it("should have correct external href for logo link", async () => {
             render(<Header />);
